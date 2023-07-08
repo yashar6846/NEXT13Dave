@@ -19,7 +19,7 @@ export default function Feedback() {
         const { name, email, message } = data
 
         // Send data to API route 
-        const res = await fetch('http://localhost:3001/api/feedback', {
+        const res = await fetch('https://im-donkey-default-rtdb.firebaseio.com/feedback.json', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
